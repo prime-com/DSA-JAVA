@@ -138,8 +138,31 @@ public class ArrayBasics {
 
     //‼️ reversing an array
 
-    
-    
+    // for (  int left = 0, right = arr.length - 1;left < right ; left++ , right--) {
+    //     int temp = arr[left];
+
+    //     arr[left] = arr[right];
+    //     arr[right] = temp;  
+        
+    // }
+    // for ( int i = 0 ; i < arr.length ; i++) {
+    //     System.out.println(arr[i]);
+    // }
+
+    // System.out.println();
+
+    // ‼️ reversing a string (leetcode)
+
+    char[] s = {'a','e','i','o','u'};
+
+    for ( int left = 0, right = s.length - 1; left < right ;left++ ,right--) {
+        char temp = s[left] ;
+        s[left] = s[right];
+        s[right] = temp;
+    }
+    for (int i = 0; i< s.length;i++) {
+        System.out.println(s[i]);
+    }
         }
 
     }
