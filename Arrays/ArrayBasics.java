@@ -4,7 +4,7 @@ public class ArrayBasics {
     public static void main(String[] args) {
         
         // ‼️ DECLARATION AND INITIALIZATION
-        int[] arr = {10,5,51,20,30,40,50};
+        // int[] arr = {10,5,51,20,30,40,50};
         
 
         // System.out.println(arr[0]);
@@ -265,6 +265,61 @@ public class ArrayBasics {
     // }
 
     // System.out.println(largest_num + " " + second_largest_num + " " + third_largest_num); 
+
+
+
+    // ‼️ to check if the array is monotonic or not
+
+    // int[] arr = {10,5,51,20,30,40,50};
+
+    // boolean ascending = true;
+    // boolean descending = true;
+
+    // for ( int i = 0 ; i < arr.length - 1 ; i++) {
+    //     if ( arr[i] > arr[i+1] ) {
+    //         ascending = false;
+                  
+    //     }  
+    //     else if ( arr[i] < arr[i+1]) {
+    //         descending = false;
+    
+    //     }  
+    //     if (!ascending && !descending) {
+    //         break;
+    //     }  
+          
+    // }
+    
+    // if ( ascending ) {
+    //     System.out.println("ascending order");
+    //     }
+
+    // else if ( descending) {
+    //     System.out.println("descending order");
+    // }
+    // else  {
+    //     System.out.println("not in order");
+    //     }  
+   
+    //  return ascending || descending;  //⚠️ THIS IS USED IF WE WANT TO RETURN TURE OR FALSE.(CHANGE - PUBLIC STATIC VOID -> PUBLIC BOOLEAN)
+
+
+    //‼️ moves 0 in last of array
+
+    // int[] arr = {0,1,0,3,12};
+    // int writeCounter = 0;
+
+    // for ( int i = 0 ; i < arr.length ; i++) {
+    //     if ( arr[i] != 0) {
+    //         arr[writeCounter] = arr[i] ;
+    //         writeCounter++;
+    //     }
+
+    // }
+    //  for ( ; writeCounter < arr.length ;writeCounter++) {
+    //         arr[writeCounter] = 0;                 
+    //     }
+    //     System.out.println(java.util.Arrays.toString(arr));
 
 
 
