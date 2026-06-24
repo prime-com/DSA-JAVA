@@ -4,7 +4,8 @@ public class ArrayBasics {
     public static void main(String[] args) {
         
         // ‼️ DECLARATION AND INITIALIZATION
-        int[] arr = {10,55,5,20,30,40,50};
+        int[] arr = {10,5,51,20,30,40,50};
+        
 
         // System.out.println(arr[0]);
         // System.out.println(arr[2]);
@@ -153,16 +154,122 @@ public class ArrayBasics {
 
     // ‼️ reversing a string (leetcode)
 
-    char[] s = {'a','e','i','o','u'};
+    // char[] s = {'a','e','i','o','u'};
 
-    for ( int left = 0, right = s.length - 1; left < right ;left++ ,right--) {
-        char temp = s[left] ;
-        s[left] = s[right];
-        s[right] = temp;
-    }
-    for (int i = 0; i< s.length;i++) {
-        System.out.println(s[i]);
-    }
+    // for ( int left = 0, right = s.length - 1; left < right ;left++ ,right--) {
+    //     char temp = s[left] ;
+    //     s[left] = s[right];
+    //     s[right] = temp;
+    // }
+    // for (int i = 0; i< s.length;i++) {
+    //     System.out.println(s[i]);
+    // }
+
+
+    // ‼️ second largest element 
+
+    // int[] arr = {10,55,5,20,30,40,50};
+
+   
+    // int largest_num = arr[0];
+    // int second_largest_num = arr[1];
+
+    
+    //     if ( second_largest_num > largest_num) {
+    //         int temp = largest_num;
+    //         largest_num = second_largest_num;
+    //         second_largest_num = temp;
+    // }
+
+    // for ( int i = 2 ; i < arr.length ; i++) {        
+        
+    //     if ( arr[i] > largest_num ) {
+    //         second_largest_num = largest_num;
+    //         largest_num = arr[i];        
+    //     }
+
+    //     else if ( arr[i] > second_largest_num) {
+    //         second_largest_num = arr[i];
+    //     }  
+    // }
+
+    // System.out.println(largest_num + " " + second_largest_num); 
+
+
+    // ‼️ third largest (leetcode)
+
+    // int[] arr = {10,5,51,20,30,40,50};
+
+    // if ( arr.length == 1) {
+    //     System.out.println(arr[0]);
+    //     return;
+    // }
+    // else if ( arr.length == 2) {
+    //     if ( arr[1]> arr[0]) {
+    //         int temp = arr[0];
+    //         arr[0] = arr[1];
+    //         arr[1] = temp;
+    //     }
+    //     System.out.println(arr[0] + " " + arr[1]);
+    // }
+   
+    // int largest_num = arr[0];
+    // int second_largest_num = arr[1];
+    // int third_largest_num = arr[2];
+   
+    // if ( second_largest_num > largest_num) {
+    //     int temp = largest_num;
+    //     largest_num = second_largest_num;
+    //     second_largest_num = temp;
+    // }
+
+    // if (third_largest_num > largest_num) {
+    //     int temp = largest_num;
+    //     largest_num = third_largest_num;
+    //     third_largest_num = temp;
+    // }
+
+    //  if (third_largest_num > second_largest_num ) {
+    //     int temp = second_largest_num;
+    //     second_largest_num = third_largest_num;
+    //     third_largest_num = temp;
+    //  }
+
+    //   if (second_largest_num == largest_num) {
+    // second_largest_num = -1; 
+    // }
+    // if (third_largest_num == second_largest_num || third_largest_num == largest_num) {
+    // third_largest_num = -1;
+    // }
+
+
+    // for ( int i = 3 ; i < arr.length ; i++) {   
+    //     if (arr[i] == largest_num || arr[i] == second_largest_num || arr[i] == third_largest_num) {
+    //     continue; 
+    // }     
+        
+    //     if ( arr[i] > largest_num ) {
+    //         third_largest_num = second_largest_num;
+    //         second_largest_num = largest_num;
+    //         largest_num = arr[i];        
+    //     }
+
+    //     else if ( arr[i] > second_largest_num ) {
+    //         third_largest_num = second_largest_num;
+    //         second_largest_num = arr[i];
+    //     }  
+    //     else if ( arr[i] > third_largest_num) {
+            
+    //         third_largest_num = arr[i];
+    //     }
+    // }
+
+    // System.out.println(largest_num + " " + second_largest_num + " " + third_largest_num); 
+
+
+
+
+
         }
 
     }
