@@ -1,4 +1,6 @@
 package Arrays;
+import java.util.HashMap;
+
 
 public class ArrayBasics {
     public static void main(String[] args) {
@@ -322,9 +324,124 @@ public class ArrayBasics {
     //     System.out.println(java.util.Arrays.toString(arr));
 
 
+    //‼️ #1st leetcode problem(two sum) [nested loop]
+    // int[] arr = {4,43,8,12,32,9,13};
+
+    // int target = 170;
+
+    // for ( int i = 0 ; i < arr.length ; i++) {
+    //     for (int j = i +1 ; j < arr.length ; j++) {
+    //         if ( arr[i] + arr[j] == target) {
+    //             System.out.println(i + " " + j);
+    //     }
+
+    //     }
+        
+    // }
+
+    //‼️ HashMap basic implementation
+
+    // HashMap<String , Integer> Name = new HashMap<>();
+    
+    // Name.put("Tanmay", 21);
+
+    // System.out.println(Name.get("Tanmay"));
+
+    //‼️  HashMap basic implementation from array to hashmap
+
+    // int[] arr = {23,1,65,5,55,45,9,21,34};
+
+    // HashMap<Integer , Integer> Implement = new HashMap<>();
+
+    // for ( int i = 0 ; i < arr.length ; i++) {
+       
+    //     Implement.put(arr[i],i);
+       
+    // }
+    // System.out.println(Implement.get(55));
+
+    //‼️The Challenge: "The Target Finder"
+
+    // int[] arr = {2,12,33,21,5};
+    // int target = 6;
+
+    // HashMap <String , Integer> map = new HashMap<>();
+
+    // for (int i = 0; i < arr.length ; i++) {
+    //    if (arr[i] == target * 2) {
+    // map.put("Found", i);
+    //    }
+
+    // }
+   
+    // System.out.println(map.containsKey("Found"));
+
+    //‼️ The Challenge: "The Lucky Number Tracker"
+
+    // int[] scores = {12,34,90,54,7,22};
+    // int lucky = 7;
+
+    // HashMap<Integer , Integer> map = new HashMap<>();
+
+    // for (int i = 0 ; i < scores.length ; i++) {
+    //     if (scores[i] == lucky) {
+    //         map.put(lucky, i);
+    //     }
+    // }
+    // System.out.println(map.containsKey(lucky));
+
+    //‼️The Challenge: "The Complement Finder"
+
+    // int[] arr = {12,32,76,23,85,90,2};
+    // int target = 95;
+
+    // HashMap<Integer , Integer> map = new HashMap<>();
+
+    // for ( int i = 0; i < arr.length ; i++) {
+    //     if ( target - 10 == arr[i]) {
+    //         map.put(arr[i], i);
+    //     }
+    // }
+    // System.out.println(map.get(target - 10));
+
+    
+    //‼️leetcode Problem #1
+
+    // int[] arr = {1,2,3,4,5};
+
+    // int target = 9;
+    
+    // HashMap<Integer , Integer> map = new HashMap<>();
+
+    // for (int i = 0 ; i < arr.length ; i++) {
+    //     int remaining = target - arr[i];
+    //         if ( map.containsKey(remaining) ) {
+    //            System.out.println("Indices: " + map.get(remaining) + ", " + i);
+    //             break;
+    //     }
+    //        map.put(arr[i],i);
+    // }
 
 
+    //‼️ in leetcode output #1 problem
+    //     class Solution {
+    //     public int[] twoSum(int[] arr, int target) {
+    //         HashMap<Integer , Integer> map = new HashMap<>();
 
-        }
+    //     for (int i = 0 ; i < arr.length ; i++) {
+    //         int remaining = target - arr[i];
+    //             if ( map.containsKey(remaining) ) {
+    //                return new int [] {map.get(remaining) , i };
+    //         }
+    //            map.put(arr[i],i);
+    //     }
+    //     return new int[] {};
+    //     }
+    // }
+   
+
+
 
     }
+
+}
