@@ -441,6 +441,106 @@ public class ArrayBasics {
    
 
 
+    // ‼️The Challenge: "The Major Element"
+    // put the elements in hashmap it there are duplicates and give the output of which comes first maximum time;
+
+    // int[] arr = {4,45,1,3,2,45};
+    // HashMap<Integer , Integer> map = new HashMap<>();
+
+    // for ( int i = 0 ; i< arr.length ; i++) {
+
+    //     if (map.containsKey(arr[i])) {
+    //         System.out.println("Duplicates :" + arr[i]);
+            
+    //         break;
+    //     }
+    //     else {
+    //         map.put(arr[i], 1);
+    //     }
+
+    // }
+
+
+    //‼️ #217 LC Contains Duplicates
+
+    // int[] arr = {4,45,1,3,2,45};
+    // HashMap<Integer , Integer> map = new HashMap<>();
+    // for ( int i = 0 ; i < arr.length ; i++) {
+    //     if (map.containsKey(arr[i])) {
+    //        // return true;
+    //         break;
+    //     }
+    //     else {
+    //         map.put(arr[i],1);
+    //     }
+    // }
+
+    //‼️ # 219. L.C. Contains Duplicate II 
+    // 1. check if there are duplicates or not 2. if yes then take their index values and take their absolute differences if its greater then the k( given ) then return true else false
+
+    // int[] arr = { 1,2,3,1};
+    // int k = 3;
+
+    // HashMap<Integer,Integer> map = new HashMap<>();
+
+    // for ( int i = 0 ; i < arr.length ; i++) {
+    //     if(map.containsKey(arr[i])) {
+    //         int pastIndex = map.get(arr[i]);
+    //         int result = Math.abs(i - pastIndex);
+            
+    //         if ( result <= k) {
+
+    //         return true;
+    //         }
+    //     }      
+    //         map.put(arr[i], i);  
+    // }
+    // return false;
+
+    //‼️  prefix question (Array)
+    // create a array for the addition from x to y ( without 2nd loop )
+
+    // int[] arr1 = {1,2,3,4,5};
+    // int[] arr2 = new int[arr1.length];
+
+    // int index1 = 1;
+    // int index2 = 4;
+
+    // int sum = 0;
+    // int finalRes = 0;
+    // for ( int i = 0; i < arr1.length ; i++) {
+       
+    //     // addition logic here
+
+    // sum += arr1[i];
+    // arr2[i] = sum;
+
+    // }
+    // finalRes = arr2[index2] - arr2[index1-1];
+    // System.out.println(finalRes);
+
+    // System.out.println(java.util.Arrays.toString(arr2));
+
+
+    // ‼️ #1480 L.C. 
+    // class Solution {
+    // public int[] runningSum(int[] arr1) {
+    // int sum = 0;
+    // int finalRes = 0;
+    // int[] arr2 = new int[arr1.length];
+
+    // for ( int i = 0 ; i < arr1.length ; i++) {
+    //     sum += arr1[i];
+    //     arr2[i] = sum;
+    // }
+    // return arr2;
+    // }
+    // }
+
+    
+
+
+
 
     }
 
